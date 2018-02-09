@@ -41,7 +41,7 @@ Ribble.attachEvent(el, options, triggers)
 
 The default options are:
 
-```json
+```js
 {
   duration: 400, // transition duration
   zIndex: "9999",

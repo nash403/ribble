@@ -14,11 +14,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nash403/navscroll-js.git"
+    "url": "https://github.com/nash403/ribble.git"
   },
-  "homepage": "https://github.com/nash403/navscroll-js#readme",
+  "homepage": "https://github.com/nash403/ribble#readme",
   "bugs": {
-    "url": "https://github.com/nash403/navscroll-js/issues"
+    "url": "https://github.com/nash403/ribble/issues"
   },
   "keywords": ["vuejs", "ripple", "ripple-effect", "material", "vanilla"],
   "scripts": {

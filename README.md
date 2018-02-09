@@ -46,7 +46,7 @@ The default options are:
   duration: 400, // transition duration
   zIndex: "9999",
   bgColor: "currentColor",
-  maxOpacity: "0.4", // the opacity will change from '0.2' to maxOpacity and the to '0'
+  maxOpacity: "0.4", // the opacity will change from '0.2' to maxOpacity and then to '0'
   easing: "cubic-bezier(0.4, 0, 0.2, 1)" // css easing
 }
 ```

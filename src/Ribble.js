@@ -5,12 +5,13 @@ export default {
     let eventTriggers = ['mousedown', 'touchstart']
     let definedTriggers = Object.keys(binding.modifiers)
     eventTriggers = definedTriggers.length ? definedTriggers : eventTriggers
-    attachEvent(el, eventTriggers, binding.value)
+    attachEvent(el, binding.value, eventTriggers)
   },
   attachEvent
 }
 
-function attachEvent(el, triggers, options) {
+function attachEvent(el, options, triggers = ['mousedown', 'touchstart']) {
+  triggers = Array.isArray(triggers) ? triggers : [triggers]
   for (let evType of triggers) {
     el.addEventListener(evType, event => {
       switch (evType) {

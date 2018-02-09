@@ -1,8 +1,7 @@
 {
   "name": "ribble",
-  "description":
-    "Material ripple effect with ease (Vanilla js, works also as a Vue.js directive)",
-  "version": "1.0.0",
+  "description": "Material ripple effect with ease (Vanilla js, works also as a Vue.js directive)",
+  "version": "1.0.1",
   "main": "dist/ribble.js",
   "module": "src/Ribble.js",
   "author": {
@@ -20,7 +19,13 @@
   "bugs": {
     "url": "https://github.com/nash403/ribble/issues"
   },
-  "keywords": ["vuejs", "ripple", "ripple-effect", "material", "vanilla"],
+  "keywords": [
+    "vuejs",
+    "ripple",
+    "ripple-effect",
+    "material",
+    "vanilla"
+  ],
   "scripts": {
     "dev": "webpack --progress --hide-modules",
     "start": "yarn dev",

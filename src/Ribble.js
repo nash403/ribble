@@ -40,7 +40,7 @@ function startRipple(
   let target = el
   let eventType = event.type
   // Get border to avoid offsetting on ripple container position
-  let targetBorder = +getComputedStyle(target).borderWidth.replace('px', '')
+  let targetBorder = +window.getComputedStyle(target).borderWidth.replace('px', '')
 
   // Get necessary variables
   let rect = target.getBoundingClientRect(),
@@ -89,7 +89,7 @@ function startRipple(
   let storedTargetPosition =
     target.style.position.length > 0
       ? target.style.position
-      : getComputedStyle(target).position
+      : window.getComputedStyle(target).position
   // Change target position to relative to guarantee ripples correct positioning
   if (storedTargetPosition !== 'relative') {
     target.style.position = 'relative'

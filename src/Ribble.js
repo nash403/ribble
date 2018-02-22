@@ -1,3 +1,14 @@
+let supportsPassive = false;
+try {
+  let opts = Object.defineProperty({}, "passive", {
+    get: function() {
+      supportsPassive = true;
+    }
+  });
+  window.addEventListener("test", null, opts);
+} catch (e) {}
+
+
 export default {
   name: 'ribble',
 
@@ -21,7 +32,7 @@ function attachEvent(el, options, triggers = ['mousedown', 'touchstart']) {
         default:
           startRipple(event, el, options)
       }
-    })
+    }, supportsPassive ? opts : false)
   }
 }
 
@@ -154,7 +165,7 @@ function startRipple(
       ? 'mouseup'
       : eventType === 'touchstart' ? 'touchend' : false
   if (releaseEvent) {
-    el.addEventListener(releaseEvent, release, false)
+    el.addEventListener(releaseEvent, release, supportsPassive ? opts : false)
   } else {
     release()
   }

@@ -1,7 +1,7 @@
 {
   "name": "ribble",
   "description": "Material ripple effect with ease (Vanilla js, works also as a Vue.js directive)",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/ribble.js",
   "module": "src/Ribble.js",
   "author": {
